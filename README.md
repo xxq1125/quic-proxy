@@ -26,10 +26,5 @@ Building on Linux
 2. Build the QUIC client, server, and tests:
    ```
    cd src
-   gn gen out/Default && ninja -C out/Default quic_client quic_server net_unittests
+   gn gen out/Default && ninja -C out/Default epoll_quic_client epoll_quic_server
    ```
-
-From then on you can follow the usual Chromium instructions for playing with the
-toy client and server:
-
-https://www.chromium.org/quic/playing-with-quic
